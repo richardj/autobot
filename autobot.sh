@@ -19,7 +19,8 @@ while test $# -gt 0; do
       else
         echo "couldn't find package.json, please add your package.json file."
       fi
-
+      # done with the npm part! Now onto sass
+      
       break
       ;;
 
@@ -29,12 +30,6 @@ while test $# -gt 0; do
       break
       ;;
 
-    --init)
-      npm install
-      npm update -g bower
-      bower install
-      break
-      ;;
   esac
 done
 
